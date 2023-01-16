@@ -35,12 +35,12 @@ export default class Login extends Component{
         console.log(data, "userRegister");
         if (data.status === "ok") {
           swal({title: "Wonderful!", text: "You are Logged In!", icon:"success", buttons: false});
-          // let tID = setTimeout(function () {
+          let tID = setTimeout(function () {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
           window.location.href = "/Managed";
-        //   window.clearTimeout(tID);
-        // }, 2000);
+          window.clearTimeout(tID);
+        }, 2000);
         }
         else if(data.error === "User Not found"){
           swal({title: "Error!", text: "User Not Found!", icon:"error", buttons: false, timer: 2000});
