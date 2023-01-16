@@ -153,17 +153,17 @@ body{
     height: 40px;
     padding: 6px;
     border-radius: 20px;
-    filter: drop-shadow(0 10px 0 #15111a);
+    /* filter: drop-shadow(0 10px 0 #15111a); */
     
 }
 
 .go:hover{
     color: var(--color-dark);
 }
-.btn-get-started:active{
+/* .btn-get-started:active{
     filter: drop-shadow(0 0 0 #15111a);
     transform: translate(0, 10px);
-}
+} */
 
 @media(max-width: 1200px) {
     .btn-get-started{
