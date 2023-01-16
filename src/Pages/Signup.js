@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/Login.css'
+import '../styles/Common.css'
 import L from '../Img/lg.svg'
 import { Link } from 'react-router-dom'
 import swal from 'sweetalert';
@@ -34,14 +34,14 @@ handleSubmit(e) {
   .then((res) => res.json())
   .then((data) => {
     console.log(data, "userRegister");
-    if (data.status == "ok") {
+    if (data.status === "ok") {
       swal({title: "Wonderful!", text: "Account Created!", icon:"success", buttons: false});
       let tID = setTimeout(function () {
       window.location.href = "/";
       window.clearTimeout(tID);
     }, 2000);
     }
-    else if(data.error == "User Exists"){
+    else if(data.error === "User Exists"){
       swal({title: "Error!", text: "User account already Exist!", icon:"error", buttons: false, timer: 2000});
     }
     else{
@@ -53,35 +53,35 @@ handleSubmit(e) {
 render(){  
   return (
     <>
-    <div onSubmit={this.handleSubmit}>
+    <div onSubmit={this.handleSubmit} className="login-back">
     <div className='parent'>
     <div className='child float-left-child'>
       <img src={L} alt='logo' className='img'/>
     </div>
     <div className='child float-left-child'>
-    <h1 className='title'>Managed.io</h1>
+    <h1 className='title-ls'>Managed.io</h1>
     </div>
     </div>
-<form>
-  <div className="row">
+<form className='form'>
+  <div className="row-1">
   <div className="heading">
 		<h1 className="top text-large">Create Account</h1>
-		<p className="text text-normal">Already have an account? <span><Link to='/' className="text text-links">Log In</Link></span>
+		<p className="text-ls text-normal">Already have an account? <span><Link to='/login' className="text-ls text-links">Log In</Link></span>
 		</p>
 	</div>
     <label htmlFor="email" className="input-label" hidden>Email Address</label>
-		<input type="email" name="email" id="email" placeholder="Email Address" className='tit'required
+		<input type="email" name="email" id="email" placeholder="Email Address" required
     onChange={(e) => this.setState({ email: e.target.value})}/>
   </div>
-  <div className="row">
+  <div className="row-1">
   <label htmlFor="password" className="input-label" hidden>Password</label>
 	<input type="password" name="password" id="password" placeholder="Password" required
   onChange={(e) => this.setState({ password: e.target.value})}/>
   </div>
-  <button type="submit">Confirm</button>
+  <button type="submit" className='button'>Confirm</button>
 </form>
 </div>
-<footer className="w-100 bg-light text-center">
+<footer className="w-100  text-center">
 <p>&copy; 2023 All Rights Reserved<br/> Made by Aman Vohra </p>
 </footer>
     </>

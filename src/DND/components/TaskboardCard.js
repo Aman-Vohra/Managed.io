@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import { Draggable } from "@hello-pangea/dnd";
 import { connect } from "react-redux";
-import '../CSS/taskboardcard.css'
+import '../../styles/Common.css'
 
 import { deleteCard } from "../actions";
 
@@ -35,7 +35,8 @@ const TaskboardCard = ({ text, id, index, dispatch, listID }) => {
                   paddingRight: "0.8rem",
                   paddingTop: "0.2rem",
                   paddingBottom: "0.2rem",
-                  textTransform: "uppercase"
+                  textTransform: "uppercase",
+                  borderRadius: "25px"
                 }}
                 onClick={() => dispatch(deleteCard(listID, id))}
               >

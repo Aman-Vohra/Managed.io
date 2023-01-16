@@ -2,7 +2,7 @@ import React from "react";
 import TaskboardCard from "./TaskboardCard";
 import TaskboardActionButton from "./TaskboardActionButton";
 import { Droppable } from "@hello-pangea/dnd";
-import '../CSS/taskboardlist.css'
+import '../../styles/Common.css'
 
 const TaskboardList = ({ title, cards, listID }) => {
   return (
@@ -12,7 +12,6 @@ const TaskboardList = ({ title, cards, listID }) => {
           className="taskboardlist_container"
           {...provided.droppableProps}
           ref={provided.innerRef}
-          style={styles.container}
         >
           <div className="sub-heading">{title}</div>
           <TaskboardActionButton listID={listID} />
@@ -33,14 +32,5 @@ const TaskboardList = ({ title, cards, listID }) => {
   );
 };
 
-const styles = {
-  container: {
-    backgroundColor: "#eee",
-    width: 300,
-    padding: "0.5rem",
-    marginRight: "1rem",
-    height: "100%"
-  }
-};
 
 export default TaskboardList;

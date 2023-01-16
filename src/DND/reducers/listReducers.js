@@ -96,8 +96,7 @@ const listReducer = (state = initialState, action) => {
         droppableIdStart,
         droppableIdEnd,
         droppableIndexStart,
-        droppableIndexEnd,
-        draggableId
+        droppableIndexEnd
       } = action.payload;
       const newState = [...state];
       // in the same list
