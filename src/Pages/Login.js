@@ -38,7 +38,7 @@ export default class Login extends Component{
           let tID = setTimeout(function () {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
-          window.location.href = "./Managed";
+          window.location.href = "/Managed";
           window.clearTimeout(tID);
         }, 2000);
         }
