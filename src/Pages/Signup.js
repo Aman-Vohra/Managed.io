@@ -36,10 +36,10 @@ handleSubmit(e) {
     console.log(data, "userRegister");
     if (data.status === "ok") {
       swal({title: "Wonderful!", text: "Account Created!", icon:"success", buttons: false});
-      let tID = setTimeout(function () {
+      // let tID = setTimeout(function () {
       window.location.href = "/";
-      window.clearTimeout(tID);
-    }, 2000);
+    //   window.clearTimeout(tID);
+    // }, 2000);
     }
     else if(data.error === "User Exists"){
       swal({title: "Error!", text: "User account already Exist!", icon:"error", buttons: false, timer: 2000});
