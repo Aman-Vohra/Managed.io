@@ -43,10 +43,10 @@ export default class Login extends Component{
         }, 2000);
         }
         else if(data.error === "User Not found"){
-          swal({title: "Error!", text: "User Not Found!", icon:"error", buttons: false, timer: 2000});
+          swal({title: "Error!", text: "User Not Found!", icon:"error", buttons: false});
         }
         else{
-          swal({title: "Error!", text: "Invalid Password!", icon:"error", buttons: false, timer: 2000});
+          swal({title: "Error!", text: "Invalid Password!", icon:"error", buttons: false});
         }
       });
   }
