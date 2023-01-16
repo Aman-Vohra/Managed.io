@@ -18,7 +18,7 @@ handleSubmit(e) {
   e.preventDefault();
   const{ email, password } = this.state;
   console.log(email, password);
-  fetch("http://localhost:9000/register", {
+  fetch("https://managed-backend.netlify.app/register", {
       method: "POST",
       crossDomain: true,
       headers: {
