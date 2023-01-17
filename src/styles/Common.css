@@ -262,10 +262,6 @@ body{
         margin: auto;
         height: 370px;
     }
-    .row-child-1{
-        margin-bottom: 10px;
-        max-height: 100%;
-    }
     .text{
         font-size: 1.3rem;
     }
@@ -291,9 +287,6 @@ body{
     .test{
         margin: auto;
         height: 370px;
-    }
-    .row-child-1{
-        margin-bottom: 10px;
     }
     .text{
         font-size: 1.3rem;
@@ -322,9 +315,6 @@ body{
         margin-right: auto;
         margin-top: -10px;
         height: 310px;
-    }
-    .row-child-1{
-        margin-bottom: 20px;
     }
     .image-fluid-animated{
         position: relative;
@@ -370,9 +360,6 @@ body{
     .test{
         margin: auto;
         height: 320px;
-    }
-    .row-child-1{
-        margin-bottom: 20px;
     }
     .image-fluid-animated{
         position: relative;

@@ -50,7 +50,7 @@ export default class First extends Component{
   </section>
     </div>
     <section>
-  <div className="col-11 mx-auto my-5" id='about'>
+  <div className="col-11 mx-auto mt-3" id='about'>
     <div className="top-content">
       <div className="row-content">
       <div className="row-child-1">
