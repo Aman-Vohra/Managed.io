@@ -315,11 +315,12 @@ body{
         width: fit-content;
     }
     .plate{
-        height: 100%;
-        padding-bottom: 5px;
+        height: max-content;
     }
     .test{
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
         height: 310px;
     }
     .row-child-1{
@@ -364,8 +365,7 @@ body{
         width: fit-content;
     }
     .plate{
-        height: 100%;
-        padding-bottom: 5px;
+        height: max-content;
     }
     .test{
         margin: auto;
