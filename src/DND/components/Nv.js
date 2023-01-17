@@ -18,8 +18,8 @@ export default class Nv extends Component {
         };
       }
       componentDidMount() {
-        fetch("http://localhost:9000/userData", {
-        // fetch("https://managed-backend.netlify.app/userData", {
+        // fetch("http://localhost:9000/userData", {
+        fetch("https://managed-backend.netlify.app/userData", {
           method: "POST",
           crossDomain: true,
           headers: {
