@@ -31,8 +31,8 @@ export default class First extends Component{
   <section>
   <div className="col-11 mx-auto">
     <div className="top-content">
-      <div className="row">
-      <div className="col-md-6 order-1 order-lg-1 d-flex justify-content-center flex-column">
+      <div className="row-content">
+      <div className="row-child-1">
         <p className="text">Create and manage<br/>your tasks easily<br/>on <strong className="brand-name">Managed.io</strong> </p>
         <p className="text-2">Access all your tasks and manage them with the provided sections<br/>such as Todo, Doing, Done and Rejected</p>
       <div className="mt-3">
@@ -41,7 +41,7 @@ export default class First extends Component{
         </div>
       </div>
       </div>
-      <div className="col-md-6 pl-5 order-2 orer-lg-2 header-img">
+      <div className="row-child-1">
         <img src={I} className="image-fluid-animated" alt="home img"></img>
       </div>
     </div>
@@ -52,8 +52,8 @@ export default class First extends Component{
     <section>
   <div className="col-11 mx-auto my-5" id='about'>
     <div className="top-content">
-      <div className="row">
-      <div className="col-md-6 order-1 order-lg-1 d-flex justify-content-center flex-column">
+      <div className="row-content">
+      <div className="row-child-1">
         <div className='about'>
         <p className="text-a"><strong className="brand-name-a">About</strong> Us</p>
         <p className="text-a-1">Hi, this is Aman Vohra, developer of Managed.io
@@ -70,7 +70,7 @@ export default class First extends Component{
       </div>
       </div>
       </div>
-      <div className="col-md-6 pl-5 order-2 orer-lg-2 header-img">
+      <div className="row-child-1">
         <div className='icon-back'>
         <h1 className='icon'>M</h1>
         </div>

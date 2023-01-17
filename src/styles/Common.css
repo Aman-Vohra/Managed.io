@@ -36,6 +36,7 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color: var(--clr-white-1);
+    font-size: 100%;
 }
 
 
@@ -66,6 +67,13 @@ body{
     padding-top: 10px;
 }
 
+.row-child-1{
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
 .about{
     margin-left: 5%;
 }
@@ -74,11 +82,10 @@ body{
 }
 
 .image-fluid-animated{
-    width: 100%;
-    margin: auto;
-    height: 87%;
-    padding-left: 15%;
-    margin-left: 10%;
+    margin-left: 32%;
+    margin-bottom: 65%;
+    width: 70%;
+    height: 70%;
 }
 
 .icon-back{
@@ -148,10 +155,12 @@ body{
     background-color: var(--clr-primary-6);
     color: var(--clr-white);
     text-align: center;
+    font-size: 2vw;
+    padding: 7px;
+    margin-top: 10%;
     border: none;
-    width: 20%;
-    height: 40px;
-    padding: 6px;
+    width: 30%;
+    height: auto;
     border-radius: 20px;
     /* filter: drop-shadow(0 10px 0 #15111a); */
     
@@ -168,7 +177,6 @@ body{
 @media(max-width: 1200px) {
     .btn-get-started{
         height: auto;
-        width: fit-content;
     }
     .icon-back{
         width: auto;
@@ -177,13 +185,24 @@ body{
         height: 110%;
         padding-bottom: 5px;
     }
+    .test{
+        margin: auto;
+        height: 460px;
+    }
+    
     .text{
         font-size: 2rem;
+    }
+    .icon-back{
+        height: fit-content;
+        width: 65%;
+        margin-left: 30%;
     }
     }
 
 @media(max-width: 900px) {
     .btn-get-started{
+        height: auto;
         width: fit-content;
     }
         .icon-back{
@@ -200,13 +219,12 @@ body{
         .text{
             font-size: 2rem;
         }
-        .icon-back{
-            display: none;
-        }
+   
 }
 
 @media(max-width: 800px){
     .btn-get-started{
+        height: auto;
         width: fit-content;
     }
     .plate{
@@ -216,21 +234,24 @@ body{
     .test{
         margin: auto;
         height: 370px;
-    }
-    .image-fluid-animated{
-        display: none;
     }
     .text{
         font-size: 1.3rem;
     }
     .icon-back{
-        display: none;
+        height: fit-content;
+        width: 70%;
     }
+    .icon{
+        font-size: 15rem;
+    }
+
 }  
  
 
 @media(max-width: 745px){
     .btn-get-started{
+        height: auto;
         width: fit-content;
     }
     .plate{
@@ -241,19 +262,26 @@ body{
         margin: auto;
         height: 370px;
     }
-    .image-fluid-animated{
-        display: none;
+    .row-child-1{
+        margin-bottom: 10px;
+        max-height: 100%;
     }
     .text{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     .icon-back{
-        display: none;
+        height: fit-content;
+        width: 60%;
     }
+    .icon{
+        font-size: 15rem;
+    }
+
 }    
 
-@media(max-width: 500px){
+@media(max-width: 736px){
     .btn-get-started{
+        height: auto;
         width: fit-content;
     }
     .plate{
@@ -262,11 +290,46 @@ body{
     }
     .test{
         margin: auto;
-        height: 300px;
+        height: 370px;
+    }
+    .row-child-1{
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+    .icon-back{
+        height: fit-content;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .icon{
+        font-size: 15rem;
+    }
+
+}   
+
+@media(max-width: 500px){
+    .btn-get-started{
+        height: auto;
+        width: fit-content;
+    }
+    .plate{
+        height: 100%;
+        padding-bottom: 5px;
+    }
+    .test{
+        margin: auto;
+        height: 310px;
+    }
+    .row-child-1{
+        margin-bottom: 20px;
     }
     .image-fluid-animated{
-       width: 100px;
-       height: 100px;
+        position: relative;
+        bottom: 40px;
+        width: auto;
+        height: 100px;
     }
     .text{
         font-size: 1rem;
@@ -275,12 +338,72 @@ body{
         width: 50%;
         font-size: 0.5rem;
     }
+    .text-a{
+        width: 50%;
+        font-size: 1rem;
+    }
     .text-a-1{
         width: 50%;
         font-size: 0.5rem;
     }
     .icon-back{
-        display: none;
+        height: fit-content;
+        width: 90%;
+        margin-left: 10%;
+        position: relative;
+        bottom: 60px;
+    }
+    .icon{
+        font-size: 10rem;
+    }
+} 
+
+@media(max-width: 365px){
+    .btn-get-started{
+        height: auto;
+        width: fit-content;
+    }
+    .plate{
+        height: 100%;
+        padding-bottom: 5px;
+    }
+    .test{
+        margin: auto;
+        height: 320px;
+    }
+    .row-child-1{
+        margin-bottom: 20px;
+    }
+    .image-fluid-animated{
+        position: relative;
+        bottom: 40px;
+        width: auto;
+        height: 100px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .text-2{
+        width: 50%;
+        font-size: 0.5rem;
+    }
+    .text-a{
+        width: 50%;
+        font-size: 1rem;
+    }
+    .text-a-1{
+        width: 50%;
+        font-size: 0.5rem;
+    }
+    .icon-back{
+        height: fit-content;
+        width: 90%;
+        margin-left: 10%;
+        position: relative;
+        bottom: 60px;
+    }
+    .icon{
+        font-size: 10rem;
     }
 } 
 
@@ -452,15 +575,10 @@ body{
     margin-bottom: 1.2rem;
 }
 
-.css-hyum1k-MuiToolbar-root{
-    width: auto;
-    height: auto;
-}
+
 
 @media(max-width: 390px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
+
     .dnd{
         display: flex;
         flex-direction: column;
@@ -473,9 +591,7 @@ body{
 }
 
 @media(max-width: 490px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
+
     .dnd{
         display: flex;
         flex-direction: column;
@@ -488,9 +604,7 @@ body{
 }
 
 @media(max-width: 590px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
+
     .dnd{
         display: flex;
         flex-direction: column;
@@ -503,9 +617,7 @@ body{
 }
 
 @media(max-width: 690px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
+
     .dnd{
         display: flex;
         flex-direction: column;
@@ -518,9 +630,6 @@ body{
 }
 
 @media(max-width: 790px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
     .dnd{
         display: flex;
         flex-direction: column;
@@ -533,9 +642,6 @@ body{
 }
 
 @media(max-width: 890px){
-    .css-hyum1k-MuiToolbar-root{
-        width: fit-content;
-    }
     .dnd{
         display: flex;
         flex-direction: column;
